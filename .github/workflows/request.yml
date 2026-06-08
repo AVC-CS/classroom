@@ -8,8 +8,10 @@ permissions:
   contents: write   # commit log/<repo>.json
   issues: write     # comment + close
 
+# per-issue (not per-user): different assignments → different repos → safe to run in parallel.
+# (per-user would queue then cancel a student's simultaneous A00+A22 — one would be silently dropped.)
 concurrency:
-  group: request-${{ github.event.issue.user.login }}
+  group: request-issue-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
@@ -39,7 +41,9 @@ jobs:
               f && NF {gsub(/\r/,""); print; exit}
             '
           }
-          fail() { gh issue comment "$ISSUE" --body "$1"; gh issue close "$ISSUE"; exit 0; }
+          # comment (student gets it by notification) then DELETE the issue (no public who-requested-what trail);
+          # close as a fallback if delete is unavailable. Lost link? re-request — idempotent returns it.
+          fail() { gh issue comment "$ISSUE" --body "$1"; GH_TOKEN="$ORG_PAT" gh issue delete "$ISSUE" --yes >/dev/null 2>&1 || gh issue close "$ISSUE" >/dev/null 2>&1; exit 0; }
 
           UKEY="$(printf '%s' "$USERNAME" | tr '[:upper:]' '[:lower:]')"
           # course from title prefix "request-<course>:" (no course hardcoded, #17)
@@ -111,4 +115,4 @@ jobs:
 
           MSG="$(printf '✅ Repo: https://github.com/%s/%s\n👉 Accept the invite: https://github.com/%s/%s/invitations\nThen clone: `gh repo clone %s/%s`' "$ORG" "$REPO" "$ORG" "$REPO" "$ORG" "$REPO")"
           gh issue comment "$ISSUE" --body "$MSG"
-          gh issue close "$ISSUE"
+          GH_TOKEN="$ORG_PAT" gh issue delete "$ISSUE" --yes >/dev/null 2>&1 || gh issue close "$ISSUE" >/dev/null 2>&1

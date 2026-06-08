@@ -62,7 +62,7 @@ jobs:
             fail "❌ Registration failed: **name** and **email** are required."
 
           # --- write roster to the PRIVATE data repo via Contents API (key-per-file upsert, ORG_PAT) ---
-          DATA_REPO="${GH_REPO}-data"   # e.g. AVC-CS/classroom-data (PII lives here, not in public hub)
+          DATA_REPO="${GH_REPO}-admin"   # e.g. AVC-CS/classroom-admin (PRIVATE back-office: roster/log/report)
           STAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           CONTENT_B64="$(jq -n --arg u "$UKEY" --arg n "$NAME" --arg e "$EMAIL" --arg t "$STAMP" \
             '{username:$u, name:$n, email:$e, registered:$t}' | base64 -w0)"

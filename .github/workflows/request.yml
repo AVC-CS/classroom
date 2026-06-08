@@ -55,7 +55,7 @@ jobs:
             || fail "❌ Unknown course \`$COURSE\`."
 
           # --- must be registered (roster lives in the PRIVATE data repo, read via ORG_PAT) ---
-          DATA_REPO="${GH_REPO}-data"
+          DATA_REPO="${GH_REPO}-admin"
           ROSTER="$(GH_TOKEN="$ORG_PAT" gh api "repos/$DATA_REPO/contents/roster/$UKEY.json" --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || true)"
           [ -n "$ROSTER" ] \
             || fail "❌ You're not registered yet. Register first: https://github.com/$GH_REPO/issues/new?template=01-register.yml (use your Canvas class code), then request again."

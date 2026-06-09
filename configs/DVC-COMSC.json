@@ -4,6 +4,7 @@
       "comsc140": {
         "semester": "sp26",
         "assignments": {
+			"A51": "comsc240-fa24-a51-COMSC240A51"
         },
         "student_repo_pattern": "comsc140-{semester}-{assignment}-{username}"
       }

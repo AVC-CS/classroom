@@ -1,39 +1,42 @@
 # Classroom Hub
 
 Self-service repo provisioning for your courses — replaces GitHub Classroom.
-Two steps, both started from a link on your **Canvas** course page.
+Everything happens through **Issues** on this repo.
 
-## 1. Register (once per term — safe to repeat)
+## 🚀 How to open a form
 
-Open the **Register** link from Canvas and fill in:
+Two ways:
 
-- **Name** — your full name (First Last)
-- **Email** — your school email
-- **Code** — the class join code (shown on your Canvas course page)
-
-Your GitHub username is captured automatically. You'll get a confirmation comment.
-Made a typo? Just register again — it overwrites.
-
-## 2. Request an assignment repo
-
-Open your course's **Request** link from Canvas → pick the assignment.
-You'll get:
-
-- a private repo named `…-<assignment>-<your-username>`
-- an **invitation** to accept (link is in the confirmation comment)
-
-Accept the invite, then clone:
+- **Easiest:** click the link your instructor posted on **Canvas** — it opens the right form directly.
+- **Manually, here on GitHub:**
 
 ```
-gh repo clone <owner>/<your-repo>
+  [ <> Code ]  [ ⊙ Issues ]  [ ⇄ Pull requests ]  ...      1. click the  "Issues"  tab  ↑
+                                                            2. click the green  [ New issue ]  button (top-right)
+                                                            3. pick a form (below)
 ```
 
-Re-requesting the same assignment is safe — it just returns your existing repo.
+(“Blank issue” is **maintainers only** — students use the forms.)
+
+## The forms
+
+### 1. Register — once per term (safe to repeat)
+Fill in **Name**, **Email**, and **Code** (the class join code from your Canvas course page).
+Your GitHub username is captured automatically. Made a typo? Just register again — it overwrites.
+
+### 2. Request a `<course>` repo
+Pick the assignment → you get a **private** repo `…-<assignment>-<your-username>` and an **invitation**.
+Accept the invite (link is in the confirmation comment), then `gh repo clone …`.
+Re-requesting the same assignment is safe — it returns your existing repo.
+
+### 3. My repos
+Just **Submit** (nothing to fill in) → you get a comment listing **all** your repos, with links.
 
 ---
 
-**Not registered?** A request will be rejected with the Register link — register first
-(and wait nothing; it's instant once you use the class code).
+**Not registered?** A request is rejected with the Register link — register first
+(it's instant once you use the class code).
 
-**Instructor note:** all course/assignment/semester values live in `config.json`.
-The org is auto-detected at runtime (`github.repository_owner`) — this hub is org-neutral.
+**Instructor:** course/assignment/semester values live in `config.json`; the org is auto-detected at
+runtime (`github.repository_owner`), so this hub is org-neutral. Student PII (name/email) and the
+submission report live in the private `…-admin` repo, never here.

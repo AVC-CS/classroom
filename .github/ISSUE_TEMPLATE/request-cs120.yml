@@ -1,5 +1,5 @@
 name: Request a CS120 repo
-description: Get your personal repo for a CS120 assignment. Register first if you haven't.
+description: Get your personal repo for a CS120 assignment. Register first if you have not.
 title: "request-cs120: "
 body:
   - type: markdown
@@ -7,12 +7,12 @@ body:
       value: |
         ### Request your CS120 assignment repo
         Pick the assignment. Your GitHub username is captured automatically.
-        Not registered yet? Open the **Register** form first (and use your Canvas class code).
+        Not registered yet? Open the **Register** form first.
   - type: dropdown
     id: assignment
     attributes:
       label: Assignment
-      description: (Auto-generated from config later via sync.)
+      description: (Auto-generated from config.json by deploy/sync.sh — do not hand-edit.)
       options:
         - A00
         - A22

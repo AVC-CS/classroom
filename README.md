@@ -37,7 +37,7 @@ Just **Submit** (nothing to fill in) → you get a comment listing **all** your 
 **Not registered?** A request is rejected with the Register link — register first
 (it's instant once you use the class code).
 
-**Instructor:** course/assignment/semester values live in `configs/<org>.json` (one config per org,
-e.g. `configs/AVC-CS.json`); the workflow auto-selects its own by `github.repository_owner`, so the
-identical source ships to every org and each reads only its own config. Student PII (name/email) and the
-submission report live in the private `…-admin` repo, never here.
+**Instructor:** course/assignment/semester values live in this repo's `config.json` (one per school).
+Edit it (here on GitHub or a clone) and the **sync-forms** Action regenerates the request forms
+automatically. This repo is stamped from the `classroom-template`; code fixes arrive by merging the
+template. Student PII (name/email) and the submission report live in the private `…-admin` repo, never here.

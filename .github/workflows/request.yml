@@ -55,9 +55,9 @@ jobs:
 
           [ -n "$COURSE" ] || fail "❌ Could not read the course from the issue title. Use the course's Request link from Canvas."
 
-          # one shared source, per-org config: each org's repo auto-selects configs/<org>.json (#method-A)
-          CONFIG="configs/$ORG.json"
-          [ -f "$CONFIG" ] || fail "⚠️ Setup error: no config for org \`$ORG\` (expected $CONFIG)."
+          # per-school deploy: this repo carries its OWN single config.json (stamped from the template)
+          CONFIG="config.json"
+          [ -f "$CONFIG" ] || fail "⚠️ Setup error: this repo has no config.json yet (instructor: add it after deploy)."
 
           jq -e --arg c "$COURSE" '.courses[$c]' "$CONFIG" >/dev/null 2>&1 \
             || fail "❌ Unknown course \`$COURSE\`."

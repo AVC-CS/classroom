@@ -1,8 +1,6 @@
 {
-  "instructor_username": "Kwooley",
   "courses": {
     "cs120": {
-      "semester": "sp26",
       "assignments": {
         "A00": "cs120-sp26-a00-CS120A00",
         "A22": "cs120-sp26-a22-CS120A22",
@@ -11,17 +9,19 @@
         "A25": "cs120-sp26-a25-CS120A25",
         "A26": "cs120-sp26-a26-CS120A26",
         "Q3Q1": {
-          "template": "cs120-sp26-q3q1-CS120Q3Q1",
           "available_from": "2026-06-29T00:00:00-07:00",
-          "available_until": "2026-08-17T23:59:59-07:00"
+          "available_until": "2026-08-17T23:59:59-07:00",
+          "template": "cs120-sp26-q3q1-CS120Q3Q1"
         }
-      }
+      },
+      "semester": "sp26"
     },
     "cs130": {
-      "semester": "sp26",
       "assignments": {
         "A00": "cs130-sp26-a00-cs120-sp26-a00-CS120A00"
-      }
+      },
+      "semester": "sp26"
     }
-  }
+  },
+  "instructor_username": "Kwooley"
 }

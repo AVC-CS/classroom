@@ -22,6 +22,16 @@
         "A00": "cs130-sp26-a00-cs120-sp26-a00-CS120A00"
       },
       "semester": "sp26"
+    },
+    "csub-av": {
+      "semester": "su26",
+      "assignments": {
+        "Day1": "csub-av-su26-day1",
+        "Day2": "csub-av-su26-day2",
+        "Day3": "csub-av-su26-day3",
+        "Day4": "csub-av-su26-day4",
+        "Day5": "csub-av-su26-day5"
+      }
     }
   },
   "instructor_username": "Kwooley"

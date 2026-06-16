@@ -50,7 +50,7 @@ jobs:
 
           UKEY="$(printf '%s' "$USERNAME" | tr '[:upper:]' '[:lower:]')"
           # course from title prefix "request-<course>:" (no course hardcoded, #17)
-          COURSE="$(printf '%s' "$TITLE" | sed -n 's/^request-\([a-z0-9]*\):.*/\1/p')"
+          COURSE="$(printf '%s' "$TITLE" | sed -n 's/^request-\([^:]*\):.*/\1/p')"
           ASSIGN="$(field Assignment)"
 
           [ -n "$COURSE" ] || fail "❌ Could not read the course from the issue title. Use the course's Request link from Canvas."

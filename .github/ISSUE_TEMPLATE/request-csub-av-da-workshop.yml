@@ -1,11 +1,11 @@
-name: Request a CSUB-AV repo
-description: Get your personal repo for a CSUB-AV assignment. Register first if you have not.
-title: "request-csub-av: "
+name: Request a CSUB-AV-DA-WORKSHOP repo
+description: Get your personal repo for a CSUB-AV-DA-WORKSHOP assignment. Register first if you have not.
+title: "request-csub-av-da-workshop: "
 body:
   - type: markdown
     attributes:
       value: |
-        ### Request your CSUB-AV assignment repo
+        ### Request your CSUB-AV-DA-WORKSHOP assignment repo
         Pick the assignment. Your GitHub username is captured automatically.
         Not registered yet? Open the **Register** form first.
   - type: dropdown

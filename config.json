@@ -15,7 +15,7 @@
         },
         "W35": "cs120-sp26-w35-CS120W35"
       },
-      "semester": "sp26"
+      "semester": "su26"
     },
     "cs130": {
       "assignments": {
@@ -23,7 +23,7 @@
       },
       "semester": "sp26"
     },
-    "csub-av": {
+    "csub-av-da-workshop": {
       "semester": "su26",
       "assignments": {
         "Day1": "csub-av-su26-day1",

@@ -23,5 +23,6 @@ body:
         - Q3Q1
         - W35
         - A31
+        - A32
     validations:
       required: true

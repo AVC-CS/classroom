@@ -59,7 +59,11 @@
           "available_from": "2026-06-29T00:00:00-07:00",
           "available_until": "2026-08-17T23:59:59-07:00"
         },
-        "Q43": "cs120-sp26-q43-CS120Q43"
+        "Q43": {
+          "template": "cs120-sp26-q43-CS120Q43",
+          "available_from": "2026-06-29T00:00:00-07:00",
+          "available_until": "2026-08-17T23:59:59-07:00"
+        }
       },
       "semester": "su26"
     },

@@ -28,5 +28,6 @@ body:
         - A34
         - A35
         - A41
+        - A42
     validations:
       required: true

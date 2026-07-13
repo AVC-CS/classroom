@@ -99,6 +99,11 @@
           "available_from": "2026-06-29T00:00:00-07:00",
           "available_until": "2026-08-17T23:59:59-07:00"
         },
+        "A58": {
+          "template": "CS120A58Starter",
+          "available_from": "2026-06-29T00:00:00-07:00",
+          "available_until": "2026-08-17T23:59:59-07:00"
+        },
         "A59": {
           "template": "CS120A59Starter",
           "available_from": "2026-06-29T00:00:00-07:00",
@@ -111,11 +116,6 @@
         },
         "A510": {
           "template": "CS120A510Starter",
-          "available_from": "2026-06-29T00:00:00-07:00",
-          "available_until": "2026-08-17T23:59:59-07:00"
-        },
-        "A58": {
-          "template": "CS120A58Starter",
           "available_from": "2026-06-29T00:00:00-07:00",
           "available_until": "2026-08-17T23:59:59-07:00"
         }

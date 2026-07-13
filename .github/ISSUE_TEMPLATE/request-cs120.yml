@@ -20,8 +20,6 @@ body:
         - A24
         - A25
         - A26
-        - Q3Q1
-        - W35
         - A31
         - A32
         - A33
@@ -33,9 +31,6 @@ body:
         - A44
         - A45
         - A46
-        - Q41
-        - Q42
-        - Q43
         - A51
         - A52
         - A53
@@ -45,7 +40,12 @@ body:
         - A57
         - A58
         - A59
-        - A511
         - A510
+        - A511
+        - Q3Q1
+        - Q41
+        - Q42
+        - Q43
+        - W35
     validations:
       required: true

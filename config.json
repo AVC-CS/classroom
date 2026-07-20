@@ -159,7 +159,9 @@
       }
     },
     "cs110": {
-      "assignments": {},
+      "assignments": {
+        "A00": "CS110A00"
+      },
       "semester": "su26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
     }

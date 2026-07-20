@@ -158,6 +158,11 @@
           "template": "CS120A64Starter",
           "available_from": "2026-06-29T00:00:00-07:00",
           "available_until": "2026-08-17T23:59:59-07:00"
+        },
+        "A65": {
+          "template": "CS120A65Starter",
+          "available_from": "2026-06-29T00:00:00-07:00",
+          "available_until": "2026-08-17T23:59:59-07:00"
         }
       },
       "semester": "su26"

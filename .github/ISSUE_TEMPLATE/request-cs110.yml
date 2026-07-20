@@ -1,0 +1,18 @@
+name: Request a CS110 repo
+description: Get your personal repo for a CS110 assignment. Register first if you have not.
+title: "request-cs110: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Request your CS110 assignment repo
+        Pick the assignment. Your GitHub username is captured automatically.
+        Not registered yet? Open the **Register** form first.
+  - type: dropdown
+    id: assignment
+    attributes:
+      label: Assignment
+      description: (Auto-generated from config.json — do not hand-edit.)
+      options:
+    validations:
+      required: true

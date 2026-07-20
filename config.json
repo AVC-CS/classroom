@@ -157,6 +157,11 @@
         "Day4": "csub-av-su26-day4",
         "Day5": "csub-av-su26-day5"
       }
+    },
+    "cs110": {
+      "assignments": {},
+      "semester": "su26",
+      "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
     }
   },
   "instructor_username": "Kwooley"

@@ -183,6 +183,11 @@
           "template": "CS120Q6Q1Starter",
           "available_from": "2026-07-20T00:00:00-07:00",
           "available_until": "2026-08-17T23:59:59-07:00"
+        },
+        "Q6Q2": {
+          "template": "CS120Q6Q2Starter",
+          "available_from": "2026-07-20T00:00:00-07:00",
+          "available_until": "2026-08-17T23:59:59-07:00"
         }
       },
       "semester": "su26"

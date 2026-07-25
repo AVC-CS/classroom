@@ -190,7 +190,8 @@
           "available_until": "2026-08-17T23:59:59-07:00"
         },
         "A71": "CS120A71Starter",
-        "A72": "CS120A72Starter"
+        "A72": "CS120A72Starter",
+        "A73": "CS120A73Starter"
       },
       "semester": "su26"
     },

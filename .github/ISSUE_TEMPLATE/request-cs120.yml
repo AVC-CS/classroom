@@ -71,6 +71,7 @@ body:
         - Q41
         - Q42
         - Q43
+        - Q71
         - W35
     validations:
       required: true

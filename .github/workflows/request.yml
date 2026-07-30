@@ -138,7 +138,8 @@ jobs:
           STAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           LOG_JSON="$(jq -nc --arg t "$STAMP" --arg u "$UKEY" --arg n "$NAME" --arg e "$EMAIL" \
                 --arg c "$COURSE" --arg a "$ASSIGN" --arg s "$SEM" --arg r "$REPO" \
-            '{time:$t, username:$u, name:$n, email:$e, course:$c, assignment:$a, semester:$s, repo:$r}')"
+                --arg url "https://github.com/$ORG/$REPO" \
+            '{time:$t, username:$u, name:$n, email:$e, course:$c, assignment:$a, semester:$s, repo:$r, url:$url}')"
           GH_TOKEN="$ORG_PAT" gh issue create --repo "$DATA_REPO" \
             --title "log: $REPO" --body "$LOG_JSON" >/dev/null \
             || echo "::warning::log issue failed for $REPO — repo+invite OK, backfill later"

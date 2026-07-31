@@ -41,7 +41,9 @@ jq -r '.courses | keys_unsorted[]' "$CONFIG" | while read -r course; do
     printf '      label: Assignment\n'
     printf '      description: (Auto-generated from config.json — do not hand-edit.)\n'
     printf '      options:\n'
-    jq -r --arg c "$course" '.courses[$c].assignments | keys_unsorted[] | "        - " + .' "$CONFIG"
+    # sort -V = natural order so the dropdown is A51<A52<...<A59<A510<A511 (not lexical A510<A52),
+    # regardless of the order assignments were added to config.json.
+    jq -r --arg c "$course" '.courses[$c].assignments | keys_unsorted[]' "$CONFIG" | sort -V | sed 's/^/        - /'
     printf '    validations:\n      required: true\n'
   } > "$out"
   n="$(jq -r --arg c "$course" '.courses[$c].assignments | length' "$CONFIG")"

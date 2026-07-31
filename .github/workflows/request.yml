@@ -33,7 +33,7 @@ jobs:
           ORG: ${{ github.repository_owner }}
           # every secret as JSON, so a quiz's access code can be looked up by name (see the code
           # gate below). NEVER echo this — it holds JOIN_CODE / ORG_PAT too.
-          SECRETS_JSON: ${{ toJSON(secrets) }}
+          SECRETS_JSON: "{}"   # BISECT: literal instead of toJSON(secrets)
           ISSUE: ${{ github.event.issue.number }}
           USERNAME: ${{ github.event.issue.user.login }}
           TITLE: ${{ github.event.issue.title }}

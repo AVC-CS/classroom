@@ -31,6 +31,9 @@ jobs:
           ORG_PAT: ${{ secrets.ORG_PAT }}
           GH_REPO: ${{ github.repository }}
           ORG: ${{ github.repository_owner }}
+          # every secret as JSON, so a quiz's access code can be looked up by name (see the code
+          # gate below). NEVER echo this — it holds JOIN_CODE / ORG_PAT too.
+          SECRETS_JSON: ${{ toJSON(secrets) }}
           ISSUE: ${{ github.event.issue.number }}
           USERNAME: ${{ github.event.issue.user.login }}
           TITLE: ${{ github.event.issue.title }}
@@ -52,6 +55,10 @@ jobs:
           # course from title prefix "request-<course>:" (no course hardcoded, #17)
           COURSE="$(printf '%s' "$TITLE" | sed -n 's/^request-\([^:]*\):.*/\1/p')"
           ASSIGN="$(field Assignment)"
+          # optional form input — only quiz/exam assignments consult it (code gate, further down).
+          # A blank Issue-Forms input arrives as the literal "_No response_", not as an empty line.
+          CODE="$(field 'Access code')"
+          if [ "$CODE" = "_No response_" ]; then CODE=""; fi
 
           [ -n "$COURSE" ] || fail "❌ Could not read the course from the issue title. Use the course's Request link from Canvas."
 
@@ -107,6 +114,32 @@ jobs:
             EXISTED=1   # idempotent — repo already there, just return the existing link
           else
             EXISTED=0
+
+            # --- ACCESS CODE gate (quiz/exam only: config entry has "requires_code": true) ---
+            # A time window cannot gate an exam that stays open for days: any student could provision
+            # the private repo on day 1 and read the questions long before sitting the quiz. (Verified
+            # 2026-07-31 on AVC-CS: the Ch7 quizzes Q71..Q74 were plain always-open entries and one
+            # student already held all four repos.) The code lives INSIDE the Canvas quiz, so only a
+            # student who actually started the quiz can produce it — the release trigger becomes the
+            # attempt, not the clock.
+            # Secret NAME follows the repo-name convention: uppercase(course)+uppercase(assignment)
+            # (cs120 + Q71 -> CS120Q71). Course is part of it because one classroom repo serves
+            # several courses and assignment keys repeat across them (A00 exists in cs120/cs130/cs110).
+            # ⛔ The code itself is NEVER in config.json — this repo is PUBLIC. It is a repo secret.
+            # Checked HERE, inside the create branch, so a student who already has the repo (a quiz is
+            # multi-attempt — they come back for the link) is never asked for the code again.
+            if [ "$(jq -r 'if type=="object" then (.requires_code // false) else false end' <<<"$ENTRY")" = "true" ]; then
+              SKEY="$(printf '%s%s' "$COURSE" "$ASSIGN" | tr '[:lower:]' '[:upper:]' | tr -c 'A-Z0-9_' '_')"
+              # value read out of the secrets JSON by name — never printed
+              EXPECTED="$(jq -r --arg k "$SKEY" '.[$k] // empty' <<<"$SECRETS_JSON")"
+              # instructor fault, NOT the student's: say so distinctly, or a forgotten `gh secret set`
+              # looks exactly like every student mistyping the code.
+              [ -n "$EXPECTED" ] \
+                || fail "⚠️ Setup error: \`$ASSIGN\` requires an access code but none is set for it yet. Tell your instructor (secret \`$SKEY\` is missing) — this is not your mistake."
+              [ -n "$CODE" ] && [ "$CODE" = "$EXPECTED" ] \
+                || fail "❌ Wrong or missing **access code** for \`$ASSIGN\`, so no repo was created. The code is inside the quiz on Canvas — open the quiz to see it, then submit a new request with that code."
+            fi
+
             # Template must EXIST and be marked a template repo — `gh repo create --template` requires it.
             # Check up front so a mis-set template reports the reason via fail(), instead of crashing under
             # `set -e` at the create line (which left the issue silently Open with no comment).

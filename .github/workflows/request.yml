@@ -31,7 +31,7 @@ jobs:
           ORG_PAT: ${{ secrets.ORG_PAT }}
           GH_REPO: ${{ github.repository }}
           ORG: ${{ github.repository_owner }}
-          SECRETS_JSON: ${{ toJSON(secrets) }}
+          SECRETS_JSON: "{}"
           ISSUE: ${{ github.event.issue.number }}
           USERNAME: ${{ github.event.issue.user.login }}
           TITLE: ${{ github.event.issue.title }}

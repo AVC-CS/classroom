@@ -200,10 +200,7 @@
         "A79": "CS120A79Starter",
         "A710": "CS120A710Starter",
         "A711": "CS120A711Starter",
-        "Q71": {
-          "template": "CS120Q71Starter",
-          "requires_code": true
-        },
+        "Q71": "CS120Q71Starter",
         "Q72": "CS120Q72Starter",
         "Q73": "CS120Q73Starter",
         "Q74": "CS120Q74Starter"

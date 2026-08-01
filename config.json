@@ -204,7 +204,10 @@
           "template": "CS120Q71Starter",
           "requires_code": true
         },
-        "Q72": "CS120Q72Starter",
+        "Q72": {
+          "template": "CS120Q72Starter",
+          "requires_code": true
+        },
         "Q73": "CS120Q73Starter",
         "Q74": "CS120Q74Starter"
       },

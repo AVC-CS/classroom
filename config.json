@@ -208,7 +208,10 @@
           "template": "CS120Q72Starter",
           "requires_code": true
         },
-        "Q73": "CS120Q73Starter",
+        "Q73": {
+          "template": "CS120Q73Starter",
+          "requires_code": true
+        },
         "Q74": "CS120Q74Starter"
       },
       "semester": "su26"

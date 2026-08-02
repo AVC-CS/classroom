@@ -215,7 +215,8 @@
         "Q74": {
           "template": "CS120Q74Starter",
           "requires_code": true
-        }
+        },
+        "A1102": "CS120A1102Starter"
       },
       "semester": "su26"
     },

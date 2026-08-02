@@ -217,7 +217,11 @@
           "requires_code": true
         },
         "A1102": "CS120A1102Starter",
-        "A1103": "CS120A1103Starter"
+        "A1103": "CS120A1103Starter",
+        "FQSU26": {
+          "template": "CS120FQSU26Starter",
+          "requires_code": true
+        }
       },
       "semester": "su26"
     },

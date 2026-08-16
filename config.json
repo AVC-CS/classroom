@@ -6,16 +6,6 @@
       },
       "semester": "sp26"
     },
-    "csub-av-da-workshop": {
-      "semester": "su26",
-      "assignments": {
-        "Day1": "csub-av-su26-day1",
-        "Day2": "csub-av-su26-day2",
-        "Day3": "csub-av-su26-day3",
-        "Day4": "csub-av-su26-day4",
-        "Day5": "csub-av-su26-day5"
-      }
-    },
     "cs110": {
       "assignments": {
         "A00": "CS110A00"

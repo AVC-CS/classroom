@@ -15,7 +15,9 @@
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
     },
     "cs122": {
-      "assignments": {},
+      "assignments": {
+        "A00": "CS122A00Starter"
+      },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
     }

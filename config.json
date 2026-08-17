@@ -13,6 +13,11 @@
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
+    },
+    "cs122": {
+      "assignments": {},
+      "semester": "fa26",
+      "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"
     }
   },
   "instructor_username": "Kwooley"

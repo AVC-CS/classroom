@@ -15,6 +15,7 @@ body:
       description: (Auto-generated from config.json — do not hand-edit.)
       options:
         - A00
+        - A21
         - L21
         - L22
         - L23

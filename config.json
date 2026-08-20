@@ -17,7 +17,8 @@
     "cs122": {
       "assignments": {
         "A00": "CS122A00Starter",
-        "W25": "CS122W25Starter"
+        "W25": "CS122W25Starter",
+        "L21": "CS122L21Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

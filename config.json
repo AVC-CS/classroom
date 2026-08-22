@@ -2,7 +2,8 @@
   "courses": {
     "cs130": {
       "assignments": {
-        "A00": "CS130A00Starter"
+        "A00": "CS130A00Starter",
+        "A17": "CS130A17Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

@@ -5,7 +5,8 @@
         "A00": "CS130A00Starter",
         "A17": "CS130A17Starter",
         "L20": "CS130L20Starter",
-        "L21": "CS130L21Starter"
+        "L21": "CS130L21Starter",
+        "L22": "CS130L22Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

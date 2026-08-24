@@ -17,5 +17,6 @@ body:
         - A00
         - A01
         - A11
+        - A12
     validations:
       required: true

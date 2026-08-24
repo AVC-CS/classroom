@@ -36,7 +36,8 @@
       "assignments": {
         "A00": "CS140A00Starter",
         "A01": "CS140A01Starter",
-        "A11": "CS140A11Starter"
+        "A11": "CS140A11Starter",
+        "A12": "CS140A12Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

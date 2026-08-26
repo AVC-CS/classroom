@@ -28,7 +28,8 @@
         "L24": "CS122L24Starter",
         "A21": "CS122A21Starter",
         "A22": "CS122A22Starter",
-        "L30": "CS122L30Starter"
+        "L30": "CS122L30Starter",
+        "L31": "CS122L31Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

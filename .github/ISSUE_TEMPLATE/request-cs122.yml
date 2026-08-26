@@ -22,6 +22,7 @@ body:
         - L23
         - L24
         - L30
+        - L31
         - W25
     validations:
       required: true

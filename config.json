@@ -43,7 +43,8 @@
         "L43": "CS122L43Starter",
         "L43-L": "CS122L43-LStarter",
         "L44-1": "CS122L44-1Starter",
-        "L44-2": "CS122L44-2Starter"
+        "L44-2": "CS122L44-2Starter",
+        "L45-1": "CS122L45-1Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

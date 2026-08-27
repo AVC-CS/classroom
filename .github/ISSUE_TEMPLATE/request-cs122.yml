@@ -38,6 +38,7 @@ body:
         - L44-1
         - L44-2
         - L45-1
+        - L45-2
         - W25
     validations:
       required: true

@@ -33,6 +33,7 @@ body:
         - L35
         - L41
         - L42
+        - L43
         - W25
     validations:
       required: true

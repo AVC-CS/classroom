@@ -40,6 +40,7 @@ body:
         - L45-1
         - L45-2
         - L46
+        - L47
         - W25
     validations:
       required: true

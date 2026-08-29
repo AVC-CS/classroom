@@ -47,6 +47,7 @@ body:
         - L47
         - L48
         - M1Q1
+        - M1Q2
         - W25
     validations:
       required: true

@@ -56,6 +56,10 @@
         "M1Q1": {
           "template": "CS122M1Q1Starter",
           "requires_code": true
+        },
+        "M1Q2": {
+          "template": "CS122M1Q2Starter",
+          "requires_code": true
         }
       },
       "semester": "fa26",

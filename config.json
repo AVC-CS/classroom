@@ -8,7 +8,8 @@
         "L21": "CS130L21Starter",
         "L22": "CS130L22Starter",
         "L31": "CS130L31Starter",
-        "L32": "CS130L32Starter"
+        "L32": "CS130L32Starter",
+        "L33": "CS130L33Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

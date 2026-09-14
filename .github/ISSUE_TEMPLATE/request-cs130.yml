@@ -23,5 +23,6 @@ body:
         - L32
         - L33
         - W6L1
+        - W6L2
     validations:
       required: true

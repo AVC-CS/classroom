@@ -14,7 +14,8 @@
         "W6L2": "CS130W6L2Starter",
         "W6A1": "CS130W6A1Starter",
         "W6L01": "CS130W6L01Starter",
-        "W6L02": "CS130W6L02Starter"
+        "W6L02": "CS130W6L02Starter",
+        "W7L1": "CS130W7L1Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

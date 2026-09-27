@@ -28,5 +28,6 @@ body:
         - W6L02
         - W6L2
         - W7L1
+        - W7L2
     validations:
       required: true

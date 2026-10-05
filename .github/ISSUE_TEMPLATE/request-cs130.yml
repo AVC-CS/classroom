@@ -32,5 +32,6 @@ body:
         - W7L2
         - W8A1
         - W8L0
+        - W8L1
     validations:
       required: true

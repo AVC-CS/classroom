@@ -31,6 +31,7 @@ body:
         - W7L1
         - W7L2
         - W8A1
+        - W8A2
         - W8L0
         - W8L1
     validations:

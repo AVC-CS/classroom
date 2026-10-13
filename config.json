@@ -22,7 +22,11 @@
         "W8A1": "CS130W8A1Starter",
         "W8L1": "CS130W8L1Starter",
         "W8A2": "CS130W8A2Starter",
-        "W8A3": "CS130W8A3Starter"
+        "W8A3": "CS130W8A3Starter",
+        "M1Q1": {
+          "template": "CS130M1Q1Starter",
+          "requires_code": true
+        }
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

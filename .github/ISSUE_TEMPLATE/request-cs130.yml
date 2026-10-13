@@ -22,6 +22,7 @@ body:
         - L31
         - L32
         - L33
+        - M1Q1
         - W6A1
         - W6L01
         - W6L1
@@ -37,3 +38,10 @@ body:
         - W8L1
     validations:
       required: true
+  - type: input
+    id: access_code
+    attributes:
+      label: Access code
+      description: Quizzes and exams ONLY — leave this blank for regular assignments. The code is inside the quiz on Canvas.
+    validations:
+      required: false

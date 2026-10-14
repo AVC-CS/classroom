@@ -21,5 +21,6 @@ body:
         - AP1L0
         - AP1L01
         - AP1L1
+        - AP1L2
     validations:
       required: true

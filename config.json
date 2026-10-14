@@ -97,7 +97,8 @@
         "A12": "CS140A12Starter",
         "AP1L0": "CS140AP1L0Starter",
         "AP1L01": "CS140AP1L01Starter",
-        "AP1L1": "CS140AP1L1Starter"
+        "AP1L1": "CS140AP1L1Starter",
+        "AP1L2": "CS140AP1L2Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

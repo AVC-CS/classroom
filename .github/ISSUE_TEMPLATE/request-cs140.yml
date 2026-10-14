@@ -19,5 +19,6 @@ body:
         - A11
         - A12
         - AP1L0
+        - AP1L01
     validations:
       required: true

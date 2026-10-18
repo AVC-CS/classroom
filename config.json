@@ -28,7 +28,8 @@
           "requires_code": true
         },
         "L134": "CS130L134Starter",
-        "L132": "CS130L132Starter"
+        "L132": "CS130L132Starter",
+        "L133": "CS130L133Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

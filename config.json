@@ -26,7 +26,8 @@
         "M1Q1": {
           "template": "CS130M1Q1Starter",
           "requires_code": true
-        }
+        },
+        "L134": "CS130L134Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

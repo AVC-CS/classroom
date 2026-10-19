@@ -92,7 +92,8 @@
         },
         "L52": "CS122L52",
         "L55": "CS122L55",
-        "L56": "CS122L56"
+        "L56": "CS122L56",
+        "L58": "CS122L58"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

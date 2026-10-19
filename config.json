@@ -90,7 +90,8 @@
           "template": "CS122M1Q3Starter",
           "requires_code": true
         },
-        "L52": "CS122L52"
+        "L52": "CS122L52",
+        "L55": "CS122L55"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

@@ -107,7 +107,8 @@
         "L515": "CS122L515Starter",
         "L516": "CS122L516Starter",
         "A51": "CS122A51Starter",
-        "A52": "CS122A52Starter"
+        "A52": "CS122A52Starter",
+        "A53": "CS122A53Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

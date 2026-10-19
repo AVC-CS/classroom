@@ -91,7 +91,8 @@
           "requires_code": true
         },
         "L52": "CS122L52",
-        "L55": "CS122L55"
+        "L55": "CS122L55",
+        "L56": "CS122L56"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

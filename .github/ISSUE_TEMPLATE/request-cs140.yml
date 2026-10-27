@@ -29,5 +29,6 @@ body:
         - AP2L3
         - AP2L4
         - AP2L5
+        - AP2L6
     validations:
       required: true

@@ -38,5 +38,6 @@ body:
         - AP3L4
         - AP3L5
         - AP3L6
+        - AP3L7
     validations:
       required: true

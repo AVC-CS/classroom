@@ -110,7 +110,11 @@
         "A52": "CS122A52Starter",
         "A53": "CS122A53Starter",
         "A54": "CS122A54Starter",
-        "A55": "CS122A55Starter"
+        "A55": "CS122A55Starter",
+        "M2Q1": {
+          "template": "CS122M2Q1Starter",
+          "requires_code": true
+        }
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

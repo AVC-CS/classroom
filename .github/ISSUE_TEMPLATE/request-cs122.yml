@@ -70,6 +70,7 @@ body:
         - M1Q1
         - M1Q2
         - M1Q3
+        - M2Q1
         - W25
     validations:
       required: true

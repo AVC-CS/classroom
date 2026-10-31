@@ -35,7 +35,8 @@
         "L141": "CS130L141Starter",
         "L142": "CS130L142Starter",
         "L143": "CS130L143Starter",
-        "L144": "CS130L144Starter"
+        "L144": "CS130L144Starter",
+        "L145": "CS130L145Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

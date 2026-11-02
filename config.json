@@ -128,7 +128,8 @@
           "template": "CS122M2Q3Starter",
           "requires_code": true
         },
-        "L71": "CS122L71Starter"
+        "L71": "CS122L71Starter",
+        "L72": "CS122L72Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

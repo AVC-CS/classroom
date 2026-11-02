@@ -146,7 +146,8 @@
         "A73": "CS122A73Starter",
         "A74": "CS122A74Starter",
         "A75": "CS122A75Starter",
-        "A76": "CS122A76Starter"
+        "A76": "CS122A76Starter",
+        "A77": "CS122A77Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

@@ -131,7 +131,8 @@
         "L71": "CS122L71Starter",
         "L72": "CS122L72Starter",
         "L73": "CS122L73Starter",
-        "L74": "CS122L74Starter"
+        "L74": "CS122L74Starter",
+        "L75": "CS122L75Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

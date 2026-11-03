@@ -44,5 +44,6 @@ body:
         - AP4L3
         - AP4L4
         - AP4L5
+        - AP4L6
     validations:
       required: true

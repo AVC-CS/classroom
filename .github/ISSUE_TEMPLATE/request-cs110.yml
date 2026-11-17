@@ -16,5 +16,6 @@ body:
       options:
         - A00
         - L21
+        - L22
     validations:
       required: true

@@ -45,7 +45,8 @@
     },
     "cs110": {
       "assignments": {
-        "A00": "CS110A00"
+        "A00": "CS110A00",
+        "L21": "CS122L21Starter"
       },
       "semester": "fa26",
       "student_repo_pattern": "{course}-{semester}-{assignment}-{username}"

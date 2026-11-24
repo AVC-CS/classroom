@@ -163,6 +163,10 @@
         "FQ1": {
           "template": "CS122FQ1Starter",
           "requires_code": true
+        },
+        "FQ2": {
+          "template": "CS122FQ2Starter",
+          "requires_code": true
         }
       },
       "semester": "fa26",
